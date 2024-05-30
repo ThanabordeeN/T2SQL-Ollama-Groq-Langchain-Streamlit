@@ -80,7 +80,7 @@ if model_provider == "ollama" and not model:
     st.sidebar.info("Please enter a model")
 if not model_provider:
     st.sidebar.info("Please select a model provider")
-sql_url = st.sidebar.text_input("SQL URL", "postgresql+psycopg2://postgres:postgres@localhost:5432/postgres")
+sql_url = st.sidebar.text_input("SQL URL", "postgresql://postgres:postgres@localhost:5432/postgres")
 
 with st.form("question_form",clear_on_submit= False):
     question = st.text_input("Question")

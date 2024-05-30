@@ -3,4 +3,3 @@ ollama
 groq
 langchain_experimental
 streamlit
-psycopg2
